@@ -5,6 +5,6 @@ object MovieConstants {
 
     val BASE_URL : String = "https://api.themoviedb.org/3/movie/"
 
-    val TOP_RATED : String = "top_rated"
+   // val TOP_RATED : String = "top_rated"
 
 }
