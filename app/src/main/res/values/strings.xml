@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Movie-TMDB</string>
+    <string name="action_settings">Settings</string>
+    <string name="top_rated_moive">Top Rated Movie Lists</string>
+</resources>
