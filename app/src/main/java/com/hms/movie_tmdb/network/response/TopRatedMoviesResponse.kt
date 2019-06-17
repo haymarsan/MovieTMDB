@@ -15,7 +15,7 @@ class TopRatedMoviesResponse (
     val total_pages: Int,
 
     @SerializedName("results")
-    val results : MutableList<TopRatedMoviesVO>
+    val topRate_results : MutableList<TopRatedMoviesVO>
 
 ): BaseResponse()
 
