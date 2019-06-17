@@ -27,7 +27,6 @@ class RetrofitDA:DataAgent {
 
 
     override fun loadTopRatedMovies(api_key: Int, page: Int) {
-
-        movieAPI
+        movieAPI.getTopRatedMovieResponse(api_key, page)
     }
 }
