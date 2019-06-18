@@ -6,6 +6,7 @@ import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
+
 open class MovieCallBack<R: BaseResponse, D: BaseNetworkDelegate>(var delegate: D): Callback<R> {
 
 
@@ -14,12 +15,14 @@ open class MovieCallBack<R: BaseResponse, D: BaseNetworkDelegate>(var delegate: 
     }
 
     override fun onResponse(call: Call<R>, response: Response<R>) {
-        var dataResponse = response.body()
+        val dataResponse = response.body()
 
         if (dataResponse == null){
 
             delegate.onFail("Response is null")
             return
+        }else{
+            //Todo change ur code that can be send delegate.onSuccess(Type of Vo) in else case
         }
     }
 }

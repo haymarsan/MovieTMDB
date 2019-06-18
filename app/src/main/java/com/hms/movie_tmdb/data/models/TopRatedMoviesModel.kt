@@ -10,7 +10,7 @@ object TopRatedMoviesModel : BaseModel(), ITopRatedMovieModel {
 
     override fun getTopRatedMovies(): TopRatedMoviesVO {
 
-        mMovieDA.loadTopRatedMovies(MovieConstants.API_KEY,1, object : GetTopRatedDelegate{
+        mMovieDA.loadTopRatedMovies(MovieConstants.API_KEY, 1, object : GetTopRatedDelegate {
 
             override fun onSuccess(topRatedMoviesList: MutableList<TopRatedMoviesVO>) {
                 val topRatedList = topRatedMoviesList

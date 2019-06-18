@@ -9,8 +9,8 @@ import retrofit2.http.GET
 
 interface MovieAPI {
 
-    companion object{
 
+    companion object{
         const val TOP_RATED = "top_rated"
     }
 

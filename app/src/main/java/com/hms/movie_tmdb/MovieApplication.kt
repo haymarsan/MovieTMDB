@@ -7,9 +7,7 @@ class MovieApplication: Application() {
 
     override fun onCreate() {
         super.onCreate()
-
         TopRatedMoviesModel.initModel(applicationContext)
-
     }
 
 
