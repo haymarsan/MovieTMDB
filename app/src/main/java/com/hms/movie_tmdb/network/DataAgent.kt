@@ -6,6 +6,6 @@ import com.hms.movie_tmdb.delegates.GetTopRatedDelegate
 interface DataAgent {
 
 
-   fun loadTopRatedMovies(api_key: Int, page: Int, topRatedMoviesDelegate: GetTopRatedDelegate)
+   fun loadTopRatedMovies(api_key: String, page: Int, topRatedMoviesDelegate: GetTopRatedDelegate)
 
 }

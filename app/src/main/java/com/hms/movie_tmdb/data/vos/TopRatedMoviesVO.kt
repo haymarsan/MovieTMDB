@@ -1,7 +1,9 @@
 package com.hms.movie_tmdb.data.vos
 
+import android.arch.persistence.room.Entity
 import com.google.gson.annotations.SerializedName
 
+@Entity(tableName = "top_rated_movie_table")
 data class TopRatedMoviesVO (
 
     @SerializedName("vote_count")
