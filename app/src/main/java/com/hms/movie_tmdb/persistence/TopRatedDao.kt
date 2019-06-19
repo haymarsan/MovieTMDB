@@ -16,7 +16,7 @@ interface TopRatedDao {
 
 
     @Query("SELECT * FROM top_rated_movie_table")
-    fun loadTopRatedMovies(): MutableList<TopRatedMoviesVO>
+    fun loadTopRatedMovies(): List<TopRatedMoviesVO>
 
 
 }

@@ -4,6 +4,7 @@ import com.hms.movie_tmdb.data.vos.TopRatedMoviesVO
 
 interface HomeView : BaseView {
 
-    fun displayTopRatedMovies(topRatedMoviesList: TopRatedMoviesVO)
+    fun displayTopRatedMovies(topRatedMoviesList: List<TopRatedMoviesVO>)
+    fun showPrompt(message: String)
 
 }

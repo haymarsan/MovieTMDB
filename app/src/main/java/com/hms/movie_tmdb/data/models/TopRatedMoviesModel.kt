@@ -8,7 +8,7 @@ import com.hms.movie_tmdb.utils.MovieConstants
 object TopRatedMoviesModel : BaseModel(), ITopRatedMovieModel {
 
 
-    override fun getTopRatedMovies(): TopRatedMoviesVO {
+    override fun getTopRatedMovies(error:(String)-> Unit): List<TopRatedMoviesVO> {
 
         mMovieDA.loadTopRatedMovies(MovieConstants.API_KEY,1, object : GetTopRatedDelegate{
 
@@ -19,9 +19,13 @@ object TopRatedMoviesModel : BaseModel(), ITopRatedMovieModel {
             }
 
             override fun onFail(message: String) {
-                TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+                    error(message)
             }
 
         })
+
+        val movieList = mMovieDB.topRatedDao.loadTopRatedMovies()
+5
+        return movieList
     }
 }
